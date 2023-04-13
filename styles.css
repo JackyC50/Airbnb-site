@@ -26,25 +26,23 @@ nav{
     display: flex;
     align-items: center;
 }
-ul{
-    display: flex;
-    flex: 1;
-    justify-content:space-around;
-    align-items: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    
-}
-.logo{
+.nav__logo{
     background-image: url('https://via.placeholder.com/500x300.png?text=Placeholder+Image');
     width: 8rem;
     height: 4rem;
     background-size: cover;
     margin-left: 4rem;
 }
+.nav__list{
+  display: flex;
+  flex: 1;
+  justify-content:space-around;
+  align-items: center;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
 
-
-.home-page-section{
+.home-section{
     height: 90vh;
     display: flex;
     flex:1;
@@ -53,45 +51,45 @@ ul{
     margin: 6rem 4rem 6rem 4rem;
     width:100%;
 }
-.highlight-text{
+.home-container__highlight-text{
     color:var(--secondary-color);
 }
-.mission-statement{
+.home-container__mission-statement{
     font-size: var(--heading-font-size);
 }
-.call-to-action{
+.home-container__call-to-action{
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
-.book-a-stay{
+.home-container__book-a-stay{
     display: flex;
     background-color: white;
-    padding: 1.5rem 0rem 1.5rem 0rem;
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
 }
 .overlap {
     position: absolute;
-    margin-left: 0.25rem;
     z-index: 1;
 }
-.book-container{
+.home-container__book-container{
     display: flex;
+    align-items: center;
     gap:4rem;
     padding-right: 2rem;
     font-size:1.25rem;
 }
-.book-container-right-border{
+.home-container__book-container-right-border{
     padding-right:4rem;
     border-right: 1px solid gray;
 }
-.book-container-text-green{
+.home-container__book-container-text-green{
     color: green;
     font-weight: bold;
 }
-.book-container-text-gray{
+.home-container__book-container-text-gray{
     color: lightslategray;
 }
-.button-book-a-stay{
+.home-container__button-book-a-stay{
     color: white;
     background-color: var(--secondary-color);
     border:none;
@@ -102,12 +100,12 @@ ul{
     transition: color 1s ease;
 }
 
-.button-book-a-stay:hover{
+.home-container__button-book-a-stay:hover{
     background-color: var(--background-color); 
     color:var(--secondary-color);
 }
 
-.vision-statement{
+.home-container__vision-statement{
     border-top: 0.15rem solid var(--border-color);
     border-bottom: 0.15rem solid var(--border-color);
 }
@@ -128,13 +126,13 @@ aside{
     position: relative;
     height: 100vh;
 }
-.book-now-button-container{
+.main-side-image__book-now-button-container{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-right: 4rem;
 }
-.book-now-button{
+.main-side-image__book-now-button{
     margin-top: 1rem;
     color:white;
     background-color:transparent;
@@ -145,11 +143,11 @@ aside{
     transition: background-color 1s ease;
     transition: color 1s ease;
 }
-.book-now-button:hover{
+.main-side-image__book-now-button:hover{
     background-color: var(--background-color); 
     color:var(--secondary-color);
 }
-.inspiration{
+.aside__inspiration{
     border-left: 0.15rem solid var(--border-color);
     border-bottom: 0.15rem solid var(--border-color);
 }
